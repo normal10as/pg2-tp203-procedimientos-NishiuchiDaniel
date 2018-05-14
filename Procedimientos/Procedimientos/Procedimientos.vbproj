@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{930169D8-313D-4580-B2BB-97299A168837}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Procedimientos.Ej3_1</StartupObject>
+    <StartupObject>Procedimientos.Ej3_4</StartupObject>
     <RootNamespace>Procedimientos</RootNamespace>
     <AssemblyName>Procedimientos</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,6 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ej3_1.vb" />
+    <Compile Include="Ej3_2.vb" />
+    <Compile Include="Ej3_3.vb" />
+    <Compile Include="Ej3_4.vb" />
+    <Compile Include="Ej3_5.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
