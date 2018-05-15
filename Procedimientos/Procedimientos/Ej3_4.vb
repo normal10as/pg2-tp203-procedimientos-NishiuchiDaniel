@@ -1,6 +1,6 @@
 ﻿Module Ej3_4
 
-    Friend Function Comprobar(ByVal b)
+    Friend Function Comprobar(ByVal b) As Integer
         Dim a As Integer = 0
         While a <= 0
             Console.Write(b)
@@ -12,7 +12,7 @@
         Return (a)
     End Function
 
-    Friend Function Hipotenusa(ByVal a, ByVal b)
+    Friend Function Hipotenusa(ByVal a, ByVal b) As Integer
         Return (Math.Sqrt(a ^ 2 + b ^ 2))
     End Function
 

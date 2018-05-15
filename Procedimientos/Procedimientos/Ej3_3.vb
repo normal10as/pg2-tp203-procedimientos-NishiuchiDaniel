@@ -1,7 +1,7 @@
 ﻿Module Ej3_3
 
 
-    Friend Function Potencia(ByVal a, ByVal i)
+    Friend Function Potencia(ByVal a, ByVal i) As Integer
 
         Return (Math.Pow(a, i))
     End Function
