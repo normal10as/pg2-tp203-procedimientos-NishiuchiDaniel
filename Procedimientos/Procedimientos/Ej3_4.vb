@@ -1,9 +1,9 @@
 ﻿Module Ej3_4
 
-    Friend Function Comprobar(ByVal b) As Integer
+    Friend Function Comprobar(ByVal mensaje) As Integer
         Dim a As Integer = 0
         While a <= 0
-            Console.Write(b)
+            Console.Write(mensaje)
             a = Console.ReadLine()
             If a <= 0 Then
                 Console.WriteLine("El valor ingresado debe ser entero positivo")

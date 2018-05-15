@@ -1,9 +1,9 @@
 ﻿Module Ej3_5
 
-    Friend Function comprobar(ByVal b) As Double
+    Friend Function comprobar(ByVal mensaje) As Double
         Dim a As Integer = 0
         While a <= 0
-            Console.Write(b)
+            Console.Write(mensaje)
             a = Console.ReadLine()
             If a <= 0 Then
                 Console.WriteLine("El valor ingresado debe ser positivo")
