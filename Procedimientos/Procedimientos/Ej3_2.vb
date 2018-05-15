@@ -1,11 +1,4 @@
 ﻿Module Ej3_2
-    Friend Function FechaSumada(ByRef fecha, ByRef dias) As Date
-        Dim listo As Date
-        listo = fecha.adddays(dias)
-
-        Return (listo)
-    End Function
-
     Sub main()
         Dim a As Date
         Dim b As Byte
@@ -21,4 +14,9 @@
 
     End Sub
 
+    Friend Function FechaSumada(ByRef fecha As Date, ByRef dias As Byte) As Date
+        Dim listo As Date
+        listo = fecha.AddDays(dias)
+        Return (listo)
+    End Function
 End Module

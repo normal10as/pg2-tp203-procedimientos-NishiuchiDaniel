@@ -1,22 +1,4 @@
 ﻿Module Ej3_6
-    Friend Function comprobar(ByVal mensaje) As UInt16
-        Dim a As Integer = 0
-        While a <= 0
-            Console.Write(mensaje)
-            a = Console.ReadLine()
-            If a <= 0 Then
-                Console.WriteLine("El valor ingresado debe ser entero positivo")
-            End If
-        End While
-        Return (a)
-    End Function
-
-    Friend Function calcular(ByRef i, ByRef acu) As UInt32
-        Dim c As UInt16
-        c = i ^ 2
-        acu += c
-        Return acu
-    End Function
 
     Sub main()
         Dim n As Byte
@@ -32,4 +14,23 @@
         Console.ReadKey()
 
     End Sub
+    Friend Function comprobar(ByVal mensaje As String) As UInt16
+        Dim a As Integer = 0
+        While a <= 0
+            Console.Write(mensaje)
+            a = Console.ReadLine()
+            If a <= 0 Then
+                Console.WriteLine("El valor ingresado debe ser entero positivo")
+            End If
+        End While
+        Return (a)
+    End Function
+
+    Friend Function calcular(ByRef i As Byte, ByRef acu As UInt32) As UInt32
+        Dim c As UInt16
+        c = i ^ 2
+        acu += c
+        Return acu
+    End Function
+
 End Module
