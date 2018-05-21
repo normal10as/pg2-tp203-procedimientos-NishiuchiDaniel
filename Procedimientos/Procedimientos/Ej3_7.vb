@@ -23,7 +23,19 @@
         division = 4
     End Enum
 
-    Friend Function calcular(operacion, a, b) As Double
+    Friend Function calcular(ByVal operacion As Byte, ByVal a As Double, ByVal b As Double, ByVal c As Double) As Double
+        Return calcular(operacion, calcular(operacion, a, b), c)
+    End Function
+
+    Friend Function calcular(ByVal operacion As Byte, ByVal a As Double, ByVal b As Double, ByVal c As Double, ByVal d As Double) As Double
+        Return calcular(operacion, calcular(operacion, a, b), calcular(operacion, c, d))
+    End Function
+
+    Friend Function calcular(ByVal a As Double, ByVal b As Double)
+        Return calcular(1, a, b)
+    End Function
+
+    Friend Function calcular(ByVal operacion As Byte, ByVal a As Double, ByVal b As Double) As Double
         Dim x As Double
         Select Case operacion
             Case 1
@@ -36,17 +48,5 @@
                 x = a / b
         End Select
         Return x
-    End Function
-
-    Friend Function calcular(operacion, a, b, c) As Double
-        Return calcular(operacion, calcular(operacion, a, b), c)
-    End Function
-
-    Friend Function calcular(operacion, a, b, c, d) As Double
-        Return calcular(operacion, calcular(operacion, a, b), calcular(operacion, c, d))
-    End Function
-
-    Friend Function calcular(a, b)
-        Return calcular(1, a, b)
     End Function
 End Module

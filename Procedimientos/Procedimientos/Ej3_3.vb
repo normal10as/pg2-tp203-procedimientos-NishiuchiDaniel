@@ -14,7 +14,7 @@
         Console.ReadKey()
     End Sub
 
-    Friend Function Potencia(ByVal a As Decimal, ByVal i As Decimal) As Integer
+    Friend Function Potencia(ByVal a As Decimal, ByVal i As Decimal) As Decimal
         Return (Math.Pow(a, i))
     End Function
 
